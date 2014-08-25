@@ -11,6 +11,7 @@
 		B27A955462D19DF6532E4EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9C5CF631F2383502EF6E /* AppDelegate.m */; };
 		B27A965D0DA845227DAACFAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B27A9FDA92CFC41E05517528 /* InfoPlist.strings */; };
 		B27A9684D8283A581ECD281B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A9CA34D3F7676E7CDAB9C /* XCTest.framework */; };
+		B27A98A856F6EA8E1A2929E7 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A94376D68C826AF19B4FC /* SignInViewController.m */; };
 		B27A99FD13C4A2B47D6FA15A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A991DD2B592B0E5F98588 /* UIKit.framework */; };
 		B27A9A6A8B337434193E02FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27A9B165E9773D8A82F8FC2 /* Images.xcassets */; };
 		B27A9C2BCCB71D5F23F5BD1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FE72874270509DCD124 /* main.m */; };
@@ -34,11 +35,14 @@
 /* Begin PBXFileReference section */
 		B27A908A9D9449FC4A8F17E0 /* BDD_App_CodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDD_App_CodeTests.m; sourceTree = "<group>"; };
 		B27A9356625C14C2E4E3CEF8 /* BDD-App-CodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BDD-App-CodeTests-Info.plist"; sourceTree = "<group>"; };
+		B27A93C5A2A2AD3B47996EB8 /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
+		B27A94376D68C826AF19B4FC /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		B27A9684BBA3A5EB7FB2E453 /* BDD-App-Code-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BDD-App-Code-Info.plist"; sourceTree = "<group>"; };
 		B27A984E545AD196794AB9C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B27A985FBE39C4AB7FA3EF6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B27A987FBD06AA4BFB7FE641 /* BDD-App-Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BDD-App-Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A991DD2B592B0E5F98588 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B27A9937FA929658B4B04845 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		B27A9B165E9773D8A82F8FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B27A9B1E6C687BF9F334DE63 /* BDD-App-Code-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDD-App-Code-Prefix.pch"; sourceTree = "<group>"; };
 		B27A9C5CF631F2383502EF6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +100,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B27A92A66D7640AEFCDF5023 /* Sign In Service */ = {
+			isa = PBXGroup;
+			children = (
+				B27A93C5A2A2AD3B47996EB8 /* SignInService.h */,
+				B27A94376D68C826AF19B4FC /* SignInViewController.m */,
+				B27A9937FA929658B4B04845 /* SignInViewController.h */,
+			);
+			path = "Sign In Service";
+			sourceTree = "<group>";
+		};
 		B27A9A53DF636F1104596D53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +154,7 @@
 				B27A985FBE39C4AB7FA3EF6E /* AppDelegate.h */,
 				B27A9C5CF631F2383502EF6E /* AppDelegate.m */,
 				B27A9B165E9773D8A82F8FC2 /* Images.xcassets */,
+				B27A92A66D7640AEFCDF5023 /* Sign In Service */,
 			);
 			path = "BDD-App-Code";
 			sourceTree = "<group>";
@@ -243,6 +258,7 @@
 			files = (
 				B27A9C2BCCB71D5F23F5BD1A /* main.m in Sources */,
 				B27A955462D19DF6532E4EAD /* AppDelegate.m in Sources */,
+				B27A98A856F6EA8E1A2929E7 /* SignInViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
