@@ -24,4 +24,4 @@ We'll be using following frameworks:
 
 ## Live templates
 
-We'll be relying heavily on use of live templates. You can import templates that we'll be using from [settings file](https://github.com/paweldudek/bdd-app-code/blob/master/settings.jar) we've included in this repo.
+We'll be relying heavily on use of live templates. Those can be found in this [settings file](https://github.com/paweldudek/bdd-app-code/blob/master/settings.jar). Follow [guide](http://www.jetbrains.com/idea/webhelp/exporting-and-importing-settings.html) descriping how to import settings into AppCode.
