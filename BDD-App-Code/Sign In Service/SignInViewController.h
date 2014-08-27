@@ -8,5 +8,9 @@
 
 @interface SignInViewController : UIViewController
 
+@property(nonatomic, strong) IBOutlet UITextField *loginTextField;
+@property(nonatomic, strong) IBOutlet UITextField *passwordTextField;
+
+@property(nonatomic, strong) IBOutlet UIButton *signInButton;
 
 @end
