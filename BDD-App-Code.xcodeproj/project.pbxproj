@@ -223,7 +223,7 @@
 		B27A914D3249099782BE3FD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = Dudek;
+				ORGANIZATIONNAME = "Mobile Academy";
 				TargetAttributes = {
 					BBCBFAAE19AE32C400DDA6F9 = {
 						TestTargetID = B27A9CF2850830EA305F0B2D;

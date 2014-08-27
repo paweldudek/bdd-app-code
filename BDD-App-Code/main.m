@@ -1,11 +1,6 @@
-//
-//  main.m
-//  BDD-App-Code
-//
-//  Created by Pawel Dudek on 24/08/14.
-//  Copyright (c) 2014 Dudek. All rights reserved.
-//
-
+/*
+ * Copyright (c) 2014 Mobile Academy. All rights reserved.
+ */
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
