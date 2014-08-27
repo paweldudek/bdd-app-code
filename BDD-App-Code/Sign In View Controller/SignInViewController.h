@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface SignInViewController : UIViewController
 
 @property(nonatomic, strong) IBOutlet UITextField *loginTextField;

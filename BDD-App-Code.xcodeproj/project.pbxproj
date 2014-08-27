@@ -35,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		8774F35ADAB94F01B8C26346 /* Pods-specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.xcconfig"; path = "Pods/Pods-specs.xcconfig"; sourceTree = "<group>"; };
-		B27A93C5A2A2AD3B47996EB8 /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
 		B27A94376D68C826AF19B4FC /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		B27A9684BBA3A5EB7FB2E453 /* BDD-App-Code-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BDD-App-Code-Info.plist"; sourceTree = "<group>"; };
 		B27A985FBE39C4AB7FA3EF6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		BBCBFAB719AE32C400DDA6F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBCBFABB19AE32C400DDA6F9 /* BDD-App-CodeSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDD-App-CodeSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		F4940B358600AD0FD28E48AB /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
 		F4940F4FD2353B558728E42E /* Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
 		F52EB70BB3FE473DB0B1AB89 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,15 +107,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B27A92A66D7640AEFCDF5023 /* Sign In Service */ = {
+		B27A92A66D7640AEFCDF5023 /* Sign In View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B27A93C5A2A2AD3B47996EB8 /* SignInService.h */,
 				B27A9937FA929658B4B04845 /* SignInViewController.h */,
 				B27A94376D68C826AF19B4FC /* SignInViewController.m */,
 				BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */,
 			);
-			path = "Sign In Service";
+			path = "Sign In View Controller";
 			sourceTree = "<group>";
 		};
 		B27A9A53DF636F1104596D53 /* Products */ = {
@@ -145,7 +144,8 @@
 				B27A985FBE39C4AB7FA3EF6E /* AppDelegate.h */,
 				B27A9C5CF631F2383502EF6E /* AppDelegate.m */,
 				B27A9B165E9773D8A82F8FC2 /* Images.xcassets */,
-				B27A92A66D7640AEFCDF5023 /* Sign In Service */,
+				B27A92A66D7640AEFCDF5023 /* Sign In View Controller */,
+				F49403EE8C41C7FD59F5CABF /* Sign In Service */,
 			);
 			path = "BDD-App-Code";
 			sourceTree = "<group>";
@@ -167,6 +167,14 @@
 				BBCBFABB19AE32C400DDA6F9 /* BDD-App-CodeSpecs-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F49403EE8C41C7FD59F5CABF /* Sign In Service */ = {
+			isa = PBXGroup;
+			children = (
+				F4940B358600AD0FD28E48AB /* SignInService.h */,
+			);
+			path = "Sign In Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
