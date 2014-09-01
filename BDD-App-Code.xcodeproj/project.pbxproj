@@ -25,6 +25,7 @@
 		BBCBFAB219AE32C400DDA6F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A991DD2B592B0E5F98588 /* UIKit.framework */; };
 		BBCBFAB819AE32C400DDA6F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBCBFAB619AE32C400DDA6F9 /* InfoPlist.strings */; };
 		BBCBFAC219AE363B00DDA6F9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */; };
+		BC956559022C7ED847B84E89 /* UIAlertView+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = BC956D5AD5978E081AB2713F /* UIAlertView+Specs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		BBCBFAB719AE32C400DDA6F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBCBFABB19AE32C400DDA6F9 /* BDD-App-CodeSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDD-App-CodeSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		BC956375EBAE3C072466B4B4 /* UIAlertView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Specs.h"; sourceTree = "<group>"; };
+		BC956D5AD5978E081AB2713F /* UIAlertView+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Specs.m"; sourceTree = "<group>"; };
 		F4940B358600AD0FD28E48AB /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
 		F4940F4FD2353B558728E42E /* Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
 		F52EB70BB3FE473DB0B1AB89 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +158,8 @@
 				B27A92802DC0B5E5509741FA /* UIView+Specs.h */,
 				B27A93E5CE477C874C3B44DE /* UIControl+Specs.m */,
 				B27A97D30909AAEA2127FD94 /* UIControl+Specs.h */,
+				BC956D5AD5978E081AB2713F /* UIAlertView+Specs.m */,
+				BC956375EBAE3C072466B4B4 /* UIAlertView+Specs.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				B27A9ECAD083B93573DB46C7 /* SignInViewControllerSpec.m in Sources */,
 				B27A958A8591FEF0674CDBFF /* UIView+Specs.m in Sources */,
 				B27A92CAD88BFD35AFAC807D /* UIControl+Specs.m in Sources */,
+				BC956559022C7ED847B84E89 /* UIAlertView+Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
