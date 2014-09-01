@@ -137,6 +137,13 @@
 			);
 			sourceTree = "<group>";
 		};
+		B27A9F0E8A9C1688D3D6C0FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B27A9F5EE46AD18D08316958 /* BDD-App-Code */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +162,7 @@
 			children = (
 				BBCBFAB419AE32C400DDA6F9 /* Supporting Files */,
 				F4940F4FD2353B558728E42E /* Specs.h */,
+				B27A9F0E8A9C1688D3D6C0FC /* Helpers */,
 			);
 			path = "BDD-App-CodeSpecs";
 			sourceTree = "<group>";
