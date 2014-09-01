@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		44E781BF3D5C4EEF8E5FE5AC /* libPods-specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F52EB70BB3FE473DB0B1AB89 /* libPods-specs.a */; };
 		B27A91EE24E37A17599F2648 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A9D35B8B2FFCDCFA8C039 /* CoreGraphics.framework */; };
+		B27A92332B0C840ACE0BC8A7 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9B475546342D2E20E487 /* AppDelegateSpec.m */; };
+		B27A92CAD88BFD35AFAC807D /* UIControl+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A93E5CE477C874C3B44DE /* UIControl+Specs.m */; };
 		B27A955462D19DF6532E4EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9C5CF631F2383502EF6E /* AppDelegate.m */; };
+		B27A958A8591FEF0674CDBFF /* UIView+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9790F5F5555E5777A9F1 /* UIView+Specs.m */; };
 		B27A965D0DA845227DAACFAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B27A9FDA92CFC41E05517528 /* InfoPlist.strings */; };
 		B27A98A856F6EA8E1A2929E7 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A94376D68C826AF19B4FC /* SignInViewController.m */; };
 		B27A99FD13C4A2B47D6FA15A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A991DD2B592B0E5F98588 /* UIKit.framework */; };
 		B27A9A6A8B337434193E02FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27A9B165E9773D8A82F8FC2 /* Images.xcassets */; };
 		B27A9C2BCCB71D5F23F5BD1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FE72874270509DCD124 /* main.m */; };
+		B27A9ECAD083B93573DB46C7 /* SignInViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A96B1B7A95A6766ED57D3 /* SignInViewControllerSpec.m */; };
 		B27A9FC04A12622DC50D1BD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A9E27CC365804FBB3F2DF /* Foundation.framework */; };
 		BBCBFAB019AE32C400DDA6F9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A9CA34D3F7676E7CDAB9C /* XCTest.framework */; };
 		BBCBFAB119AE32C400DDA6F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A9E27CC365804FBB3F2DF /* Foundation.framework */; };
@@ -35,14 +39,20 @@
 
 /* Begin PBXFileReference section */
 		8774F35ADAB94F01B8C26346 /* Pods-specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.xcconfig"; path = "Pods/Pods-specs.xcconfig"; sourceTree = "<group>"; };
+		B27A92802DC0B5E5509741FA /* UIView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Specs.h"; sourceTree = "<group>"; };
+		B27A93E5CE477C874C3B44DE /* UIControl+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Specs.m"; sourceTree = "<group>"; };
 		B27A94376D68C826AF19B4FC /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		B27A9684BBA3A5EB7FB2E453 /* BDD-App-Code-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BDD-App-Code-Info.plist"; sourceTree = "<group>"; };
+		B27A96B1B7A95A6766ED57D3 /* SignInViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewControllerSpec.m; sourceTree = "<group>"; };
+		B27A9790F5F5555E5777A9F1 /* UIView+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Specs.m"; sourceTree = "<group>"; };
+		B27A97D30909AAEA2127FD94 /* UIControl+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Specs.h"; sourceTree = "<group>"; };
 		B27A985FBE39C4AB7FA3EF6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B27A987FBD06AA4BFB7FE641 /* BDD-App-Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BDD-App-Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27A991DD2B592B0E5F98588 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B27A9937FA929658B4B04845 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		B27A9B165E9773D8A82F8FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B27A9B1E6C687BF9F334DE63 /* BDD-App-Code-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDD-App-Code-Prefix.pch"; sourceTree = "<group>"; };
+		B27A9B475546342D2E20E487 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 		B27A9C5CF631F2383502EF6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B27A9CA34D3F7676E7CDAB9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B27A9D35B8B2FFCDCFA8C039 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +123,7 @@
 				B27A9937FA929658B4B04845 /* SignInViewController.h */,
 				B27A94376D68C826AF19B4FC /* SignInViewController.m */,
 				BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */,
+				B27A96B1B7A95A6766ED57D3 /* SignInViewControllerSpec.m */,
 			);
 			path = "Sign In View Controller";
 			sourceTree = "<group>";
@@ -140,6 +151,10 @@
 		B27A9F0E8A9C1688D3D6C0FC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B27A9790F5F5555E5777A9F1 /* UIView+Specs.m */,
+				B27A92802DC0B5E5509741FA /* UIView+Specs.h */,
+				B27A93E5CE477C874C3B44DE /* UIControl+Specs.m */,
+				B27A97D30909AAEA2127FD94 /* UIControl+Specs.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -153,6 +168,7 @@
 				B27A9B165E9773D8A82F8FC2 /* Images.xcassets */,
 				B27A92A66D7640AEFCDF5023 /* Sign In View Controller */,
 				F49403EE8C41C7FD59F5CABF /* Sign In Service */,
+				B27A9B475546342D2E20E487 /* AppDelegateSpec.m */,
 			);
 			path = "BDD-App-Code";
 			sourceTree = "<group>";
@@ -325,6 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27A92332B0C840ACE0BC8A7 /* AppDelegateSpec.m in Sources */,
+				B27A9ECAD083B93573DB46C7 /* SignInViewControllerSpec.m in Sources */,
+				B27A958A8591FEF0674CDBFF /* UIView+Specs.m in Sources */,
+				B27A92CAD88BFD35AFAC807D /* UIControl+Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

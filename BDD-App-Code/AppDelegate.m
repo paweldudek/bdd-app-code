@@ -3,6 +3,7 @@
  */
 
 #import "AppDelegate.h"
+#import "SignInViewController.h"
 
 @implementation AppDelegate
 
@@ -10,6 +11,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    self.window.rootViewController = [[SignInViewController alloc] init];
 
     return YES;
 }

@@ -6,5 +6,6 @@
 
 @protocol SignInService <NSObject>
 
+- (void)signInWithLogin:(NSString *)login password:(NSString *)password;
 
 @end
