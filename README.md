@@ -22,6 +22,11 @@ We'll be using following frameworks:
 * [OCMockito](https://github.com/jonreid/OCMockito) - mocking framework.
 * [OCHamcrest]() - matchers framework.
 
+## Further read
+
+You should definitely check out [Issue #15](http://www.objc.io/issue-15/) of ObjC.io which is entirely dedicated to tests!
+
+
 ## Live templates
 
 We'll be relying heavily on use of live templates. Those can be found in this [settings file](https://github.com/paweldudek/bdd-app-code/blob/master/settings.jar). Follow [guide](http://www.jetbrains.com/idea/webhelp/exporting-and-importing-settings.html) descriping how to import settings into AppCode.
