@@ -4,6 +4,7 @@
 
 #import "AppDelegate.h"
 #import "SignInViewController.h"
+#import "ProductionSignInService.h"
 
 @implementation AppDelegate
 
@@ -12,7 +13,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    self.window.rootViewController = [[SignInViewController alloc] init];
+    self.window.rootViewController = [[SignInViewController alloc] initWithSignInService:[ProductionSignInService new]];
 
     return YES;
 }

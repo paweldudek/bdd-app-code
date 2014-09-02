@@ -9,12 +9,18 @@ static UIAlertView *specLastPresentedAlertView = nil;
 
 @implementation UIAlertView (Specs)
 
-+ (UIAlertView *)specLastPresentedAlertView {
++ (UIAlertView *)specsLastPresentedAlertView {
     return specLastPresentedAlertView;
 }
 
 - (void)show {
     specLastPresentedAlertView = self;
+}
+
+#pragma mark -
+
++ (void)afterEach{
+    specLastPresentedAlertView = nil;
 }
 
 @end

@@ -25,7 +25,9 @@
 		BBCBFAB219AE32C400DDA6F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27A991DD2B592B0E5F98588 /* UIKit.framework */; };
 		BBCBFAB819AE32C400DDA6F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBCBFAB619AE32C400DDA6F9 /* InfoPlist.strings */; };
 		BBCBFAC219AE363B00DDA6F9 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */; };
+		BC95624DAE3B8312CCFB9087 /* FakeSignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = BC956B18E33D39244DD71ABD /* FakeSignInService.m */; };
 		BC956559022C7ED847B84E89 /* UIAlertView+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = BC956D5AD5978E081AB2713F /* UIAlertView+Specs.m */; };
+		BC9569E48FCB520CDB6CF8FC /* ProductionSignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9560CB1EF4ED0CC4EE5C74 /* ProductionSignInService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +67,12 @@
 		BBCBFAB719AE32C400DDA6F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBCBFABB19AE32C400DDA6F9 /* BDD-App-CodeSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDD-App-CodeSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		BC9560CB1EF4ED0CC4EE5C74 /* ProductionSignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductionSignInService.m; sourceTree = "<group>"; };
 		BC956375EBAE3C072466B4B4 /* UIAlertView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Specs.h"; sourceTree = "<group>"; };
+		BC956B18E33D39244DD71ABD /* FakeSignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSignInService.m; sourceTree = "<group>"; };
+		BC956D22665FEF888B2F6A12 /* FakeSignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSignInService.h; sourceTree = "<group>"; };
 		BC956D5AD5978E081AB2713F /* UIAlertView+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Specs.m"; sourceTree = "<group>"; };
+		BC956EB22BD210A3933143BC /* ProductionSignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductionSignInService.h; sourceTree = "<group>"; };
 		F4940B358600AD0FD28E48AB /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
 		F4940F4FD2353B558728E42E /* Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
 		F52EB70BB3FE473DB0B1AB89 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +133,8 @@
 				B27A94376D68C826AF19B4FC /* SignInViewController.m */,
 				BBCBFAC119AE363B00DDA6F9 /* SignInViewController.xib */,
 				B27A96B1B7A95A6766ED57D3 /* SignInViewControllerSpec.m */,
+				BC956B18E33D39244DD71ABD /* FakeSignInService.m */,
+				BC956D22665FEF888B2F6A12 /* FakeSignInService.h */,
 			);
 			path = "Sign In View Controller";
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				F4940B358600AD0FD28E48AB /* SignInService.h */,
+				BC9560CB1EF4ED0CC4EE5C74 /* ProductionSignInService.m */,
+				BC956EB22BD210A3933143BC /* ProductionSignInService.h */,
 			);
 			path = "Sign In Service";
 			sourceTree = "<group>";
@@ -339,6 +349,7 @@
 				B27A9C2BCCB71D5F23F5BD1A /* main.m in Sources */,
 				B27A955462D19DF6532E4EAD /* AppDelegate.m in Sources */,
 				B27A98A856F6EA8E1A2929E7 /* SignInViewController.m in Sources */,
+				BC9569E48FCB520CDB6CF8FC /* ProductionSignInService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +362,7 @@
 				B27A958A8591FEF0674CDBFF /* UIView+Specs.m in Sources */,
 				B27A92CAD88BFD35AFAC807D /* UIControl+Specs.m in Sources */,
 				BC956559022C7ED847B84E89 /* UIAlertView+Specs.m in Sources */,
+				BC95624DAE3B8312CCFB9087 /* FakeSignInService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

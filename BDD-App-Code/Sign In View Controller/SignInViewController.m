@@ -5,7 +5,7 @@
 #import "SignInViewController.h"
 #import "SignInService.h"
 
-@interface SignInViewController ()
+@interface SignInViewController () <SignInServiceDelegate>
 
 @property(nonatomic, strong) IBOutlet UIButton *signInButton;
 
@@ -23,6 +23,7 @@
     self = [super init];
     if (self) {
         _signInService = signInService;
+        _signInService.delegate = self;
     }
 
     return self;
@@ -32,6 +33,16 @@
 
 - (IBAction)didTapSignInButton:(UIButton *)signInButton {
     [[self signInService] signInWithLogin:self.loginTextField.text password:self.passwordTextField.text];
+}
+
+#pragma mark - SignInServiceDelegate
+
+- (void)signInServiceDidLogin:(id <SignInService>)service {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sign in" message:@"Did sign in with success!"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];
 }
 
 @end

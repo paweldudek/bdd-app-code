@@ -4,17 +4,19 @@
 #import "UIView+Specs.h"
 #import "UIControl+Specs.h"
 #import "SignInService.h"
+#import "FakeSignInService.h"
+#import "UIAlertView+Specs.h"
 
 SPEC_BEGIN(SignInViewControllerSpec)
 
 describe(@"SignInViewController", ^{
     __block SignInViewController *signInViewController;
-    __block id mockSignInService;
+    __block FakeSignInService *fakeSignInService;
 
     beforeEach(^{
-        mockSignInService = mockProtocol(@protocol(SignInService));
+        fakeSignInService = [FakeSignInService new];
 
-        signInViewController = [[SignInViewController alloc] initWithSignInService:mockSignInService];
+        signInViewController = [[SignInViewController alloc] initWithSignInService:fakeSignInService];
     });
 
     afterEach(^{
@@ -40,7 +42,24 @@ describe(@"SignInViewController", ^{
         });
 
         it(@"should tell its sign in service to sign in with given login and password", ^{
-            [verify(mockSignInService) signInWithLogin:@"Fixture Login" password:@"Fixture Password"];
+            expect(fakeSignInService.capturedLogin).to.equal(@"Fixture Login");
+            expect(fakeSignInService.capturedPassword).to.equal(@"Fixture Password");
+        });
+
+        describe(@"sign in succeeds", ^{
+            beforeEach(^{
+                [fakeSignInService specSimulateSuccess];
+            });
+
+            it(@"should show an alert view with success message", ^{
+                UIAlertView *const alertView = [UIAlertView specsLastPresentedAlertView];
+                expect(alertView.title).to.equal(@"Sign in");
+                expect(alertView.message).to.equal(@"Did sign in with success!");
+            });
+
+//            it(@"async", ^AsyncBlock{
+//                //assertions here
+//            });
         });
     });
 });

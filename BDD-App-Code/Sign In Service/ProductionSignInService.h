@@ -3,9 +3,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SignInService.h"
 
-@interface UIAlertView (Specs)
 
-+ (UIAlertView *)specsLastPresentedAlertView;
+@interface ProductionSignInService : NSObject<SignInService> {
 
+}
 @end
