@@ -24,7 +24,7 @@ We'll be using following frameworks:
 
 ## Further read
 
-You should definitely check out [Issue #15](http://www.objc.io/issue-15/) of ObjC.io which is entirely dedicated to tests!
+You should definitely check out [Issue #15](http://www.objc.io/issue-15/) of objc.io which is entirely dedicated to tests!
 
 
 ## Live templates
